@@ -1,0 +1,314 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <title>Stocks</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+<div class="heading">
+    <h1>PROFESSIONAL REAL-TIME ANALYSIS OF BUSINESS HOLDINGS AND STOCK</h1>
+</div>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="crypto.html">Crypto Currency</a>
+    <a href="Technical_Analysis.html">Technical Analysis</a>
+    <a href="watchlist.html">Watchlist</a>
+    <a href="chart.html">Search</a>
+    <a href="#about">About</a>
+</div>
+
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500 Index"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100 Cash CFD"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR to USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+<table width="100%" align="center" cellpadding="0" cellspacing="2">
+                <tbody align="center"  style="font-weight:bold;font-size:18px;"">
+
+                <td width="20%"><hr>Top Stories<hr></td>
+                <td width="20%"><hr>Economic Calendar<hr></td>
+                <td width="20%"><hr>Crypto Currencies<hr></td>
+                <td width="20%"><hr>Top List<hr></td>
+
+                <tr>
+                <td>
+                  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+  {
+  "feedMode": "all_symbols",
+  "isTransparent": false,
+  "displayMode": "regular",
+  "width": 375,
+  "height": 550,
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+                </td>
+                <td>
+                  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+  {
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "regular",
+  "width": "375",
+  "height": "550",
+  "locale": "en",
+  "importanceFilter": "-1,0,1",
+  "countryFilter": "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+                </td>
+
+                
+                <td>
+                  <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+      {
+      "title": "Cryptocurrencies",
+      "title_raw": "Cryptocurrencies",
+      "tabs": [
+        {
+          "title": "Overview",
+          "title_raw": "Overview",
+          "symbols": [
+            {
+              "s": "CRYPTOCAP:TOTAL"
+            },
+            {
+              "s": "BITSTAMP:BTCUSD"
+            },
+            {
+              "s": "BITSTAMP:ETHUSD"
+            },
+            {
+              "s": "FTX:SOLUSD"
+            },
+            {
+              "s": "BINANCE:AVAXUSD"
+            },
+            {
+              "s": "COINBASE:UNIUSD"
+            }
+          ],
+          "quick_link": {
+            "title": "More cryptocurrencies",
+            "href": "/markets/cryptocurrencies/prices-all/"
+          }
+        },
+        {
+          "title": "Bitcoin",
+          "title_raw": "Bitcoin",
+          "symbols": [
+            {
+              "s": "BITSTAMP:BTCUSD"
+            },
+            {
+              "s": "COINBASE:BTCEUR"
+            },
+            {
+              "s": "COINBASE:BTCGBP"
+            },
+            {
+              "s": "BITFLYER:BTCJPY"
+            },
+            {
+              "s": "CME:BTC1!"
+            }
+          ],
+          "quick_link": {
+            "title": "More Bitcoin pairs",
+            "href": "/symbols/BTCUSD/markets/"
+          }
+        },
+        {
+          "title": "Ethereum",
+          "title_raw": "Ethereum",
+          "symbols": [
+            {
+              "s": "BITSTAMP:ETHUSD"
+            },
+            {
+              "s": "KRAKEN:ETHEUR"
+            },
+            {
+              "s": "COINBASE:ETHGBP"
+            },
+            {
+              "s": "BITFLYER:ETHJPY"
+            },
+            {
+              "s": "BINANCE:ETHBTC"
+            },
+            {
+              "s": "BINANCE:ETHUSDT"
+            }
+          ],
+          "quick_link": {
+            "title": "More Ethereum pairs",
+            "href": "/symbols/ETHUSD/markets/"
+          }
+        },
+        {
+          "title": "Solana",
+          "title_raw": "Solana",
+          "symbols": [
+            {
+              "s": "FTX:SOLUSD"
+            },
+            {
+              "s": "BINANCE:SOLEUR"
+            },
+            {
+              "s": "COINBASE:SOLGBP"
+            },
+            {
+              "s": "BINANCE:SOLBTC"
+            },
+            {
+              "s": "HUOBI:SOLETH"
+            },
+            {
+              "s": "BINANCE:SOLUSDT"
+            }
+          ],
+          "quick_link": {
+            "title": "More Solana pairs",
+            "href": "/symbols/SOLUSD/markets/"
+          }
+        },
+        {
+          "title": "Uniswap",
+          "title_raw": "Uniswap",
+          "symbols": [
+            {
+              "s": "COINBASE:UNIUSD"
+            },
+            {
+              "s": "KRAKEN:UNIEUR"
+            },
+            {
+              "s": "COINBASE:UNIGBP"
+            },
+            {
+              "s": "BINANCE:UNIBTC"
+            },
+            {
+              "s": "KRAKEN:UNIETH"
+            },
+            {
+              "s": "BINANCE:UNIUSDT"
+            }
+          ],
+          "quick_link": {
+            "title": "More Uniswap pairs",
+            "href": "/symbols/UNIUSD/markets/"
+          }
+        }
+      ],
+      "title_link": "/markets/cryptocurrencies/prices-all/",
+      "width": "375",
+      "height": "550",
+      "showChart": true,
+      "showFloatingTooltip": false,
+      "locale": "en",
+      "plotLineColorGrowing": "#2962FF",
+      "plotLineColorFalling": "#2962FF",
+      "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+      "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+      "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+      "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+      "gridLineColor": "rgba(240, 243, 250, 0)",
+      "scaleFontColor": "rgba(120, 123, 134, 1)",
+      "showSymbolLogo": true,
+      "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+      "colorTheme": "dark"
+    }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+                </td>
+
+
+                <td width="20%">
+                  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+  {
+  "colorTheme": "dark",
+  "dateRange": "1D",
+  "exchange": "US",
+  "showChart": false,
+  "locale": "en",
+  "width": "375",
+  "height": "550",
+  "largeChartUrl": "",
+  "isTransparent": false,
+  "showSymbolLogo": true,
+  "showFloatingTooltip": true
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+                </td>
+
+
+                </tr>
+                </tbody>
+                </table>
+
+  </body>
+
+  <footer><center>
+    <br><br>Developed by<br><p>BUDIDHA DINESH GOUD &emsp; | &emsp; KORUTLA PRUDHVI TEJA &emsp; | &emsp; PALAGANI VARSHITH</p>
+    <P>SAMSKRUTI COLLEGE OF ENGINEERING AND TECHNOLOGY</P>
+  </center></footer>
+</html>
